@@ -6,8 +6,9 @@ class BillCounter {
         var trueRest = (bill.sum()-bill[k])/2
         if(b == trueRest)
             return "Bon Appetit"
+        if(trueRest-b>0)
         return (trueRest-b).toString()
-
+        return (b-trueRest).toString()
         throw NotImplementedError("Not implemented")
     }
 }
